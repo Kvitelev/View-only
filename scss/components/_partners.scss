@@ -1,0 +1,17 @@
+.partners {
+  background-color: $gray-300;
+  min-height: 152px;
+}
+
+.partners__list {
+  @include flex-all-sb;
+  padding-top: 50px;
+}
+
+.partners__item:first-child {
+  padding-left: 10px;
+}
+
+.partners__item:last-child {
+  padding-right: 10px;
+}

@@ -1,0 +1,35 @@
+.header {
+  background-color: $gray-600;
+}
+
+.header__flex {
+  @include flex-all-sb;
+  padding: 25px 0px 25px 0px;
+}
+
+.header__logo {
+  display: inline-block;
+  width: 97px;
+  height: 20px;
+  background-image: url(../img/header-logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menu__list {
+  @include flex;
+  flex-wrap: wrap;
+}
+
+.menu__item {
+  margin-right: 40px;
+  &:last-child {
+    margin-right: 20px;
+  }
+}
+
+.menu__link {
+  color: $white;
+  font-size: 14px;
+  line-height: 20px;
+}

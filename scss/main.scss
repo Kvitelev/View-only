@@ -1,0 +1,11 @@
+//Базовый подключения
+@import "colors";
+@import "mixins";
+@import "fonts";
+@import "setings";
+
+//Крупные блоки
+@import "./components/header";
+@import "./components/intro";
+@import "./components/partners";
+@import "./components/features";
