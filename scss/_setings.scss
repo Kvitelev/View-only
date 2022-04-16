@@ -67,10 +67,21 @@ a {
   margin: 0;
 }
 
+.figure {
+  margin: 0;
+}
+
 .text-highlight {
   font-size: 11px;
   color: $white;
   background-color: $blue;
   border-radius: 2px;
-  padding: 2px;
+  padding: 5px;
+}
+
+.figcaption {
+  margin: 0;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba($black, 0.5);
 }

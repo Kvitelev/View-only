@@ -1,23 +1,17 @@
 .intro {
   background-color: $gray-100;
+}
+
+.intro__flex {
   min-height: 500px;
-}
-
-.info__flex {
   @include flex-all-sb;
-  &--bg {
-    background-image: url(../img/intro.png);
-    background-repeat: no-repeat;
-    background-position: 695px 35px;
-    min-height: 440px;
-  }
 }
 
-.info__wrapper {
-  padding-top: 80px;
+.intro__wrapper {
+  margin-top: 15px;
 }
 
-.info__title {
+.intro__title {
   margin: 0;
   font-size: 39px;
   line-height: 45px;
@@ -45,11 +39,15 @@
   padding: 15px 25px;
 }
 
-.intro__info {
+.intro__img {
+  width: 335px;
+  height: 350px;
+  transform: translateX(-10px) translateY(-12px);
+}
+
+.intro__figcaption {
   width: 320px;
-  font-size: 13px;
-  line-height: 21px;
-  color: rgba($black, 0.5);
   align-self: flex-end;
-  margin-right: 130px;
+  margin-top: -42px;
+  margin-right: 125px;
 }
