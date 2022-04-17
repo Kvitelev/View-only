@@ -2,9 +2,9 @@
   background-color: $gray-600;
 }
 
-.header__flex {
+.header__flex-menu {
   @include flex-all-sb;
-  padding: 25px 0px 25px 0px;
+  padding: 25px 20px;
 }
 
 .header__logo {
@@ -25,6 +25,12 @@
   margin-right: 40px;
   &:last-child {
     margin-right: 20px;
+  }
+  @include viewport-400 {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0px;
+    }
   }
 }
 

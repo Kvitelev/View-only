@@ -5,10 +5,17 @@
 .intro__flex {
   min-height: 500px;
   @include flex-all-sb;
+  @include viewport-900 {
+    flex-direction: column;
+  }
 }
 
 .intro__wrapper {
   margin-top: 15px;
+  @include viewport-550 {
+    @include flex-all-center;
+    flex-direction: column;
+  }
 }
 
 .intro__title {
@@ -18,6 +25,15 @@
   color: $black-light;
   margin-bottom: 10px;
   font-weight: 400;
+  @include viewport-900 {
+    text-align: center;
+  }
+  @include viewport-550 {
+    font-size: 26px;
+  }
+  @include viewport-350 {
+    font-size: 20px;
+  }
 }
 
 .intro__description {
@@ -27,6 +43,24 @@
   line-height: 26px;
   color: $black-light;
   margin-bottom: 30px;
+  @include viewport-900 {
+    text-align: center;
+  }
+  @include viewport-550 {
+    font-size: 14px;
+    width: 320px;
+  }
+  @include viewport-350 {
+    font-size: 10px;
+    line-height: 20px;
+    width: 270px;
+  }
+}
+
+.intro__form {
+  @include viewport-900 {
+    @include flex-all-center;
+  }
 }
 
 .intro__input {
@@ -37,12 +71,30 @@
   border-radius: 5px;
   width: 310px;
   padding: 15px 25px;
+  @include viewport-900 {
+    text-align: center;
+  }
+  @include viewport-400 {
+    width: 250px;
+    font-size: 10px;
+  }
+}
+
+.intro__figure {
+  @include viewport-900 {
+    @include flex-all-center;
+    flex-direction: column;
+  }
 }
 
 .intro__img {
   width: 335px;
   height: 350px;
   transform: translateX(-10px) translateY(-12px);
+  @include viewport-900 {
+    width: 200px;
+    height: 250px;
+  }
 }
 
 .intro__figcaption {
@@ -50,4 +102,8 @@
   align-self: flex-end;
   margin-top: -42px;
   margin-right: 125px;
+  @include viewport-900 {
+    align-self: center;
+    margin-right: 0;
+  }
 }

@@ -1,0 +1,36 @@
+@mixin viewport-1100 {
+  @media (max-width: 1100px) {
+    @content;
+  }
+}
+
+@mixin viewport-900 {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin viewport-790 {
+  @media (max-width: 790px) {
+    @content;
+  }
+}
+
+@mixin viewport-550 {
+  @media (max-width: 550px) {
+    @content;
+  }
+}
+
+@mixin viewport-400 {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin viewport-350 {
+  @media (max-width: 350px) {
+    @content;
+  }
+}
+

@@ -6,6 +6,9 @@
 .partners__list {
   @include flex-all-sb;
   padding-top: 50px;
+  @include viewport-790 {
+    flex-direction: column;
+  }
 }
 
 .partners__item:first-child {

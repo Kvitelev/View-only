@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header__flex">
+      <div class="container header__flex-menu">
         <a class="header__logo" href="#" aria-label="logo"></a>
         <nav class="menu">
           <ul class="menu__list list-reset">
@@ -128,6 +128,111 @@
           </div>
         </div>
       </section>
+      <section class="layout">
+        <div class="container">
+          <h2 class="title layout__title centered">Layout tip</h2>
+          <p class="layout__description centered">
+            Change the layout direction of a flexbox element from horizontal to vertical.
+          </p>
+          <figure class="layout__figure figure">
+            <img class="layout__img" src="img/layout-img.png" alt="" width="240" height="98">
+            <figcaption class="layout__figcaption figcaption centered">
+              Flexbox is a display setting found in the styles tab under
+              Layout > Display Settings
+            </figcaption>
+          </figure>
+          <ul class="layout__list layout__list--flex list-reset">
+            <li class="layout__item layout__item--flex layout__item--step-1">
+              <h3 class="layout__item-title list-title">Step 1</h3>
+              <p class="layout__item-description layout__item-description--step-1 centered">
+                Click to&nbsp;select <span class="text-highlight">Column 1</span>&nbsp;which is&nbsp;the white box that this paragraph you&rsquo;re reading is&nbsp;currently inside&nbsp;of.
+              </p>
+            </li>
+            <li class="layout__item layout__item--flex layout__item--step-2">
+              <h3 class="layout__item-title list-title">Step 2</h3>
+              <p class="layout__item-description layout__item-description--step-2 centered">
+                Now that <span class="text-highlight">Column 1</span>&nbsp;is selected, press the up&nbsp;arrow on&nbsp;your keyboard, selecting the parent element: <span class="text-highlight">Column Wrap&nbsp;1</span>
+              </p>
+            </li>
+            <li class="layout__item layout__item--flex layout__item--step-3">
+              <h3 class="layout__item-title list-title">Step 3</h3>
+              <p class="layout__item-description layout__item-description--step-3 centered">
+                With <span class="text-highlight">Column Wrap&nbsp;1</span>&nbsp;selected, click the icon shown above in&nbsp;the <span class="text-italic">Layout &gt; Flex Layout</span> styles panel.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="additional">
+        <div class="container">
+          <h2 class="title additional__title">Additional tips</h2>
+          <ul class="additional__list additional__list--flex list-reset">
+            <li class="additional__item additional__item--margin-padding-bg">
+              <div class="additional__wrapper-margin-padding">
+                <h3 class="additional__item--title list-title">Margin&nbsp;/ Padding</h3>
+                <p class="additional__item-description">
+                  The above screenshot shows the controls for margin and padding.
+                  Simply put, this is&nbsp;the space you add inside and/or outside of&nbsp;an&nbsp;element.
+                </p>
+              </div>
+            </li>
+            <li class="additional__item additional__item--elements-bg">
+              <div class="additional__wrpper-elements">
+                <h3 class="additional__item--title list-title">Add Elements</h3>
+                <p class="additional__item-description">
+                  The navigator tab gives you a&nbsp;clear breakdown of&nbsp;elements and their parents, as&nbsp;well as&nbsp;where they are located within the page.
+                </p>
+              </div>
+            </li>
+            <li class="additional__item additional__item--responsive-bg">
+              <div class="additional__wrpper-responsive">
+                <h3 class="additional__item--title list-title">Responsive design</h3>
+                <p class="additional__item-description additional__item-description--responsive">
+                  Clicking these breakpoints icons will change the size of&nbsp;the viewport to mimic common device sizes.
+                  Styles that are changed when viewing the website at&nbsp;other breakpoints will effect sizes smaller as&nbsp;well.
+                </p>
+              </div>
+            </li>
+            <li class="additional__item additional__item--states-bg">
+              <div class="additional__wrpper-states">
+                <h3 class="additional__item--title list-title">States</h3>
+                <p class="additional__item-description additional__item-description--states">
+                  On&nbsp;the top right of&nbsp;the selector section, there is&nbsp;a&nbsp;states dropdown.
+                  Here you can edit element styles at different states.
+                  The most common use for this is&nbsp;adding hover effects to elements such as&nbsp;buttons.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer__menu">
+        <div class="container header__flex-menu footer__flex-menu">
+          <a class="header__logo" href="#" aria-label="logo"></a>
+          <nav class="menu">
+            <ul class="menu__list list-reset">
+              <li class="menu__item menu__item--footer">
+                <a href="" class="menu__link">Home</a>
+              </li>
+              <li class="menu__item menu__item--footer">
+                <a href="" class="menu__link">About</a>
+              </li>
+              <li class="menu__item menu__item--footer">
+                <a href="" class="menu__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__copiright">
+        <div class="container">
+          <p class="footer__copiright-description">
+            &copy;&nbsp;2017, Webflow, Inc. All Rights Reserved. Brand logos for demonstration purposes only.
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
